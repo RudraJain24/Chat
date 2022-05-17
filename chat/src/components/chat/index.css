@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+.device-height{
+  height: 100vh;
+}
+
+.card-background{
+  background-color: #FEF3F1 !important;
+  border: none !important;
+}
+
+.button{
+  border: 2px solid #F5548E !important;
+  background-color: inherit !important;
+  color: #F5548E !important;
+  font-family: 'Mulish', sans-serif !important; 
+  /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+  transition: all .3s linear !important;
+  /* transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;*/
+} 
+
+.button:hover{
+  background-color: #F5548E !important;
+  color: #FEF3F1 !important;
+}
+
+.nav-background{
+  background-color:#F5548E !important;
+}
+
+.navMenu{
+  font-family: 'Mulish', sans-serif !important;
+  color: #FFFFFF !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.usersTitle{
+  height: 50px;
+    font-family: 'Mulish';
+    font-size: 2rem;
+    text-align: center;
+    color: #f5548e;
+}
+
+.chatContainer{
+  height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.sendMsg{
+    background: #F9DEE2;
+    padding: 10px 15px;
+    border-radius: 45px;
+    font-family: 'Mulish', sans-serif !important;
+    color: #0A0003 !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.receivedMsg{
+    background: #F5548E;
+    padding: 10px 15px;
+    border-radius: 45px;
+    font-family: 'Mulish', sans-serif !important;
+    color: #FFFFFF !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.msgTime{
+  color: #F5548E;
+  font-family: 'Mulish', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: .6rem;
+}
+
+.userImg{
+  height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5548E;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Mulish';
+    color: #FFFFFF;
+}
+
+.userName{
+  font-size: 20px;
+  width: 60%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.user{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgb(254, 243, 241);
+    transition: all .3s linear ;
+
+}
+
+.user:hover {
+background-color: #FFFFFF;
+cursor: pointer;
+}
+
+.userListContainer{
+  overflow-y: auto;
+    display: flex;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    background: rgb(254, 243, 241);
+}
+
+.chatInputField{
+    width: 100%;
+    background: #fef3f1;
+    padding: 10px;
+    border: 2px solid black 0 0 0;
+    border: none;
+    border-top: 1px solid #F9DEE2;
+}
+
+.sendBtn{
+  font-size: 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #fef3f1;
+    border-top: 1px solid #F9DEE2;
+}
+
+.welcomeBanner{
+  display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bannerHeading{
+  font-size: 30px;
+  font-family: 'Mulish';
+  background: #f5548e;
+  border-radius: 50px;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.user > div:first-child{
+  width:24%;
+}
+
+.user > div:last-child{
+  width:20%;
+}
+
+.onlineIndicator{
+  width: 10px;
+    height: 10px;
+    background: green;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.tiblock {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+
+.tidot {
+  -webkit-animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+  border-radius: 2px;
+  display: inline-block;
+  height: 4px;
+  margin-right: 2px;
+  width: 4px;
+  /* background-color: #f5548e; */
+}
+
+.tidotList{
+  background-color: #f5548e;
+}
+
+.tidotChannel{
+  background-color: #FFFFFF;
+}
+
+@keyframes mercuryTypingAnimation{
+0%{
+-webkit-transform:translateY(0px)
+}
+28%{
+-webkit-transform:translateY(-5px)
+}
+44%{
+-webkit-transform:translateY(0px)
+}
+}
+
+.tidot:nth-child(1){
+-webkit-animation-delay:200ms;
+}
+.tidot:nth-child(2){
+-webkit-animation-delay:300ms;
+}
+.tidot:nth-child(3){
+-webkit-animation-delay:400ms;
+}
